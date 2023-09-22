@@ -1,6 +1,8 @@
 Hello HeckMD
 ============
 
+[![hackmd-github-sync-badge](https://hackmd.io/Pt7RuE9OSPmxCu4sbxu8vg/badge)](https://hackmd.io/Pt7RuE9OSPmxCu4sbxu8vg)
+
 ## test
 
 - a
@@ -14,6 +16,11 @@ Hello HeckMD
 | 3   | 4   |
 
 ```javascript=
+/*!
+ * Javascript library - $class 2.0.0
+ * https://gist.github.com/iwill/2303057
+ */
+
 export default function $class(source, SuperClass) {
     // default values
     SuperClass = SuperClass || Object;
@@ -34,5 +41,12 @@ export default function $class(source, SuperClass) {
     
     return Class;
 }
+
+/**
+ * $class 1.0.0
+this.$class = function(src) {
+    src.constructor.prototype = src;
+    return src.constructor;
+}; */
 
 ```
